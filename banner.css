@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container>h1{
+    color: white;
+    position: relative;
+    left: 20px;
+    animation-name: banner-title;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+header:hover{
+    font-weight: bolder;
+    font-style: italic;
+}
+header:active{
+    background-color: red;
+}
+
+aside:hover{
+    font-weight: bolder;
+    font-style: oblique;
+}
+aside:active{
+    background-color: blue;
+}
+section:hover{
+    font-weight: bolder;
+    font-style: inherit;
+}
+section:active{
+    background-color: pink;
+}
+
+@keyframes banner-title {
+    from {left: -50%;}
+    to {left: 50px;}
+}
