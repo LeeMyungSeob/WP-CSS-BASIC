@@ -26,6 +26,7 @@ aside:hover{
 }
 aside:active{
     background-color: blue;
+    transition-duration: 10s;
 }
 section:hover{
     font-weight: bolder;
@@ -33,6 +34,7 @@ section:hover{
 }
 section:active{
     background-color: pink;
+    transition-delay: 2s;
 }
 
 @keyframes banner-title {
