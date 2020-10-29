@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Week 5</title>
+        <link rel="stylesheet" href="./banner.css">
+        <style>
+           .base{
+               margin: 0 auto;
+               border: 1px solid black;
+               flex-direction: column;
+               width: 800px; height: 1250px;
+               overflow: hidden;
+           }
+           .menu{
+               display: grid;
+               grid-template-columns: 20vw 20vw 20vw;
+               justify-content: flex-start;
+               margin:10px;
+               
+           }
+           .container{
+               display: flex;
+               height: 200px;
+               background-color: rgba(115, 90, 184, 0.753);
+           }
+           .plot{
+               display: grid;
+               position: relative;
+               left: 20px;
+               grid-template-columns: repeat(3, 250px);
+               grid-template-rows: repeat(3, 20vw);
+               grid-template-areas: 
+               "Section1 Section1 Asid"
+               "Section1 Section1 Asid"
+               ". Section2 Section2";
+           }
+           header{
+                grid-area: Section1;
+           }
+           aside{
+                grid-area: Asid;
+           }
+           section{
+                grid-area: Section2;
+           }
+           footer{
+              display: flex;
+              height: 100px;
+              background-color: gray;
+           }
+           .cen{
+               position: relative;
+               left: 45%;
+           }
+
+        </style>
+    </head>
+    <body>
+       <div class="base">
+           <div class="menu">
+               <div>메뉴1</div>
+               <div>메뉴2</div>
+               <div>메뉴3</div>
+           </div>
+           <div class="container">
+               <h1>My Home Page</h1>
+           </div>
+           <div class="plot">
+               <header>
+                   <h1>Section1</h1>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo iure magni odit maxime porro, ex, labore distinctio ea voluptatum consequatur rerum quae sint. Deserunt natus quibusdam asperiores adipisci? Quos.
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde minima expedita laudantium deserunt ut pariatur ad aliquid, voluptatem et omnis. Ipsum amet, dignissimos minima dolores repellendus ipsa iste vero error!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit fuga eaque earum! Aliquam totam fugit nihil magni molestias provident esse quibusdam laborum, praesentium sequi impedit aliquid accusamus, optio incidunt.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, omnis ratione? Voluptas, perspiciatis ad, fuga quidem ducimus voluptatum harum dolor praesentium aliquam natus libero cumque maxime quam nobis vero pariatur!
+                   
+                </header>
+               <aside>
+                   <h1>Asid</h1>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis pariatur sed ea eius doloremque, magnam architecto molestiae libero beatae delectus, asperiores animi voluptates inventore. Maxime reiciendis eius laudantium fugit?
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta neque incidunt minima excepturi. Ea facere voluptate temporibus quis tempora sint consequatur? Cupiditate harum illo nulla autem alias quidem blanditiis!
+                </aside>
+                <section>
+                    <h1>Section2</h1>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit eius dolorum ipsam inventore, ad voluptate ex, earum vero atque laboriosam asperiores tenetur optio nesciunt aspernatur fuga non nostrum eaque dolorem!
+                </section>
+           </div>
+           <footer>
+               <h3 class="cen">Copyright</h3>
+           </footer>
+       </div>
+       
+    </body>
+</html>
